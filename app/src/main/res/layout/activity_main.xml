@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bordia98.scarnesdie.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="Player Score"
+        android:textColor="#000000"
+        android:id="@+id/textView2"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Score"
+        android:textColor="#000000"
+        android:layout_marginEnd="53dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/playerscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/computerscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:id="@+id/ptscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Turn Score"
+
+        android:textColor="#000000"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/pturnscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+
+        android:layout_alignBaseline="@+id/ptscore"
+        android:layout_alignBottom="@+id/ptscore"
+        android:layout_toEndOf="@+id/playerscore"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CP Turn Score"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/pturnscore"
+        android:layout_alignBottom="@+id/pturnscore"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/cpturnscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/computerscore" />
+
+    <ImageView
+        android:id="@+id/diceimage"
+        android:layout_width="203dp"
+        android:layout_height="196dp"
+        app:srcCompat="@drawable/dice1"
+        android:layout_below="@+id/ptscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+
+        android:layout_alignBaseline="@+id/holdbutton"
+        android:layout_alignBottom="@+id/holdbutton"
+        android:layout_toStartOf="@+id/cpturnscore" />
+
+    <Button
+        android:id="@+id/holdbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold"
+
+        android:layout_alignBaseline="@+id/rollbutton"
+        android:layout_alignBottom="@+id/rollbutton"
+        android:layout_toStartOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/rollbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+
+        android:layout_below="@+id/diceimage"
+        android:layout_alignStart="@+id/ptscore"
+        android:layout_marginTop="42dp" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/resetbutton"
+        android:layout_toEndOf="@+id/ptscore"
+        android:layout_marginTop="48dp" />
+
+</RelativeLayout>
